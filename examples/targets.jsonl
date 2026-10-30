@@ -1,0 +1,2 @@
+{"id":"demo_001","target":{"emotion_label":"anxiety","user_profile":{"personality_traits":[],"interests":[],"style":[]},"response_text":"第一次展示前紧张很正常。可以先练习开场，再列出最想讲清楚的三个要点。","memory_refs":[]}}
+{"id":"demo_002","target":{"emotion_label":"joy","user_profile":{"personality_traits":[],"interests":["sports_fitness"],"style":[]},"response_text":"完成计划很有成就感，今天的坚持值得肯定！跑完记得放松一下。","memory_refs":[]}}

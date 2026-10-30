@@ -1,0 +1,17 @@
+{
+  "backend": "openai_compatible",
+  "model_path": "./model",
+  "trust_remote_code": false,
+  "base_url": "http://127.0.0.1:8000/v1",
+  "api_model": "model",
+  "api_key": "",
+  "request_timeout_seconds": 600,
+  "api_options": {},
+  "generation": {"max_new_tokens": 768, "do_sample": false},
+  "performance_rounds": 100,
+  "hardware_label": "fill-in-before-official-run",
+  "auxiliary_model_dir": null,
+  "auxiliary_fields": [],
+  "invalid_output_retries": 1,
+  "save_generator_predictions": false
+}

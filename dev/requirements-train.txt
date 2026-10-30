@@ -1,0 +1,11 @@
+# Base torch/CUDA and vLLM must match the competition image; do not blindly replace them.
+# These are compatibility constraints, not a claimed tested platform lockfile.
+torch>=2.3
+transformers>=4.44,<6
+accelerate>=0.33
+peft>=0.12
+bitsandbytes>=0.43
+numpy>=1.26
+# Optional local response metrics; BERTScore encoder must be provisioned locally.
+sacrebleu>=2.4
+bert-score>=0.3.13

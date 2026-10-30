@@ -1,0 +1,153 @@
+{
+  "recorded_date": "2026-10-17",
+  "scope": "Historical local evaluations. Not official scores or new measurements on this repository checkout.",
+  "assets": "Weights, official datasets, input IDs, generated conversations and raw machine logs are not distributed.",
+  "confirmation1802": {
+    "samples": 1802,
+    "conversation_groups": 721,
+    "metrics": {
+      "paired_original_baseline": {
+        "emotion_accuracy": 0.7730299667036626,
+        "profile_dimension_mean_exact_accuracy": 0.6104328523862376,
+        "bleu4": {
+          "score": 13.869355981010205,
+          "brevity_penalty": 0.9737210027303103,
+          "precisions": [
+            0.4987227103226699,
+            0.1973287343683515,
+            0.08835694598723894,
+            0.04733657791774024
+          ],
+          "reference_tokens": 274483,
+          "hypothesis_tokens": 267363,
+          "smoothing": "none",
+          "effective_order": false
+        },
+        "rouge_l_f1": 29.069906482968143,
+        "empty_response_count": 6
+      },
+      "repaired_generator": {
+        "emotion_accuracy": 0.7758046614872364,
+        "profile_dimension_mean_exact_accuracy": 0.6095079541250462,
+        "bleu4": {
+          "score": 13.931560809273403,
+          "brevity_penalty": 0.976730163257907,
+          "precisions": [
+            0.49958048842334496,
+            0.19767463687318623,
+            0.08845841286640334,
+            0.047381100078778216
+          ],
+          "reference_tokens": 274483,
+          "hypothesis_tokens": 268169,
+          "smoothing": "none",
+          "effective_order": false
+        },
+        "rouge_l_f1": 29.104315979047634,
+        "empty_response_count": 0
+      },
+      "candidate": {
+        "emotion_accuracy": 0.7758046614872364,
+        "profile_dimension_mean_exact_accuracy": 0.6448390677025527,
+        "bleu4": {
+          "score": 13.931560809273403,
+          "brevity_penalty": 0.976730163257907,
+          "precisions": [
+            0.49958048842334496,
+            0.19767463687318623,
+            0.08845841286640334,
+            0.047381100078778216
+          ],
+          "reference_tokens": 274483,
+          "hypothesis_tokens": 268169,
+          "smoothing": "none",
+          "effective_order": false
+        },
+        "rouge_l_f1": 29.104315979047634,
+        "empty_response_count": 0
+      }
+    },
+    "timing": {
+      "average_latency_ms": 3029.293473,
+      "p95_latency_ms": 8213.761222,
+      "rounds": 100,
+      "retry_count": 7,
+      "initial_invalid_count": 7,
+      "parse_failure_count": 0
+    },
+    "profile_delta_group_bootstrap_95_percentile": [
+      0.02195166943368382,
+      0.04638982416760194
+    ],
+    "baseline_scope": "Paired same first-generation outputs with original parser; invalid first responses recovered from diagnostics. Generator rows after retry are separately retained.",
+    "interpretation": "Conversation-disjoint from candidate selection for this experiment; subsequently inspected and reused, not a hidden independent test."
+  },
+  "continuation_screen256": {
+    "samples": 256,
+    "scope": "Preexisting candidate-selection subset; not independent confirmation or official score",
+    "baseline": {
+      "emotion_accuracy": 0.75390625,
+      "profile_dimension_mean_exact_accuracy": 0.6510416666666666,
+      "bleu4": {
+        "score": 13.26572941278823,
+        "brevity_penalty": 0.9511799367835552,
+        "precisions": [
+          0.497718844214402,
+          0.19661517797179315,
+          0.08612621385485136,
+          0.04488873151199847
+        ],
+        "reference_tokens": 39357,
+        "hypothesis_tokens": 37481,
+        "smoothing": "none",
+        "effective_order": false
+      },
+      "rouge_l_f1": 28.51741431878345,
+      "empty_response_count": 0
+    },
+    "continuation": {
+      "emotion_accuracy": 0.76953125,
+      "profile_dimension_mean_exact_accuracy": 0.6302083333333334,
+      "bleu4": {
+        "score": 14.061849890861708,
+        "brevity_penalty": 0.9724139683364517,
+        "precisions": [
+          0.5051716031969911,
+          0.20147252169339994,
+          0.08945306295335416,
+          0.048030278799509565
+        ],
+        "reference_tokens": 39357,
+        "hypothesis_tokens": 38286,
+        "smoothing": "none",
+        "effective_order": false
+      },
+      "rouge_l_f1": 29.16215035625585,
+      "empty_response_count": 0
+    },
+    "deltas": {
+      "emotion_accuracy": 0.015625,
+      "profile_accuracy": -0.02083333333333326,
+      "bleu4": 0.7961204780734779,
+      "rouge_l": 0.6447360374723985
+    },
+    "official_deployment_modified": false,
+    "automatic_promotion": false
+  },
+  "v2_1_acceptance135": {
+    "samples": 135,
+    "contract_passed": true,
+    "timed_rounds": 100,
+    "average_latency_ms": 2535.399285,
+    "parse_failure_count": 0,
+    "environment": "RTX4090 24GB, offline process with loopback only and training storage hidden",
+    "interpretation": "Current-container historical acceptance, not proof of a published image passing platform evaluation."
+  },
+  "source_report_sha256": {
+    "confirmation1802": "5e9a5a5aa30f9b90bce5e8b7ef87dafa4247df3b6034d58f5b2ea378faf49cb5",
+    "continuation_screen256": "6e5e3b6575d92ece765d64d262e5ab3e823fa9ba6e0a8320f40253b95a1c39f4",
+    "v2_1_acceptance135": "4a7d1061ec9180403e0408a49dc6c9fc3383c8595239952d42f56844cee32633"
+  },
+  "bertscore_measured": false,
+  "official_score": null
+}

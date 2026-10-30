@@ -1,0 +1,5 @@
+# Uses the installed platform CUDA PyTorch.
+torch>=2.3
+transformers>=4.44,<6
+accelerate>=0.33
+numpy>=1.26
